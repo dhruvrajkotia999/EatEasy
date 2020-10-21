@@ -1,6 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>EatEasy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .scenario {
+      margin-top: 10px;
+    }
+
+  </style>
 </head>
 <body>
-<script src="https://app.test.wotnot.io/BV4pNjV45gd7120000434128SzFX8DJC.js" data-session-payload='{"customer_name":"John","customer_id":"123456"}' defer></script>
+
+<div class="container">
+  <h1>EatEasy Demo </h1>
+  <h4>Here We have 4 scenarios on which the flow dynamically changed based on the parameter received, It's only for the demo purpose</h4>
+
+  <p class="scenario"> Scenario 1: Order Id is null on chat start  </p>
+    <button onclick="window.location.href='scenario1.html';" type="button" class="btn btn-primary">Scenario 1</button><br>
+
+  <p class="scenario"> Scenario 2: Order Id & Customer ID is null on chat start </p>
+    <button onclick="window.location.href='scenario2.html';" type="button" class="btn btn-primary">Scenario 2</button><br>
+
+  <p class="scenario"> Scenario 3: Customer ID and Order Id is not null on Chat start </p>
+  <button onclick="window.location.href='scenario3.html';" type="button" class="btn btn-primary">Scenario 3</button><br>
+</div>
+
+</body>
 </html>
+  
